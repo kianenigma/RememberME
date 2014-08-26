@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'afsanehregular';
+    src: url('afsaneh-webfont.eot');
+    src: url('afsaneh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('afsaneh-webfont.woff') format('woff'),
+         url('afsaneh-webfont.ttf') format('truetype'),
+         url('afsaneh-webfont.svg#afsanehregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sogandregular';
+    src: url('sogand-webfont.eot');
+    src: url('sogand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sogand-webfont.woff') format('woff'),
+         url('sogand-webfont.ttf') format('truetype'),
+         url('sogand-webfont.svg#sogandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    padding: .5em ;
+    text-align: right;
+    font-family: sogandregular;
+}
+
+.jumbotron{
+    text-align: center;
+    font-size: 3em ;
+}
+.jumbotron button {
+    display: none;
+}
+.jumbotron a:hover {
+    text-decoration: none;
+    color: black ;
+}
+
+.jumbotron a {
+    color: #3B84C9 ;
+}
+
+.form-control {
+    text-align: right;
+    width: 75% ;
+    margin: auto;
+}
+
+
+.btn {
+    margin-right: 45% ;
+    width: 7.5% ;
+}
+.inp {
+    padding: .5em;
+
+}
+.inp * {
+    margin-top: .5em ;
+}
+
+.inp button {
+    display: inline-block;
+}
+
+
+.list-group-item {
+    margin: 0;
+    text-align: right;
+}
+
+#img { max-width: 50px ; max-width: 50px;  }
+
+.badge{margin: 0em 1em 0em .5em ; font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif  }
+.label { font-size: 1em ; margin-right: .5em ;  }
+
+.glyphicon {
+    position: relative;
+    left: .5em;
+    top:.2em
+}

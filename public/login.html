@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="authApp">
+<head lang="en">
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="login.css">
+    <title>ورود به سایت</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
+	<script src="auth.js"></script>
+
+</head>
+<body ng-controller="mainCtrl">
+<div>
+    <div>
+        <div class="jumbotron">
+            <div><span class="label label-primary"> ورود به سایت  </span><i class="glyphicon glyphicon-log-in"></i></div>
+            <form>
+                 <span>نام کاربری</span><input class="form-control" type="text" ng-model="Ldata.mail">
+                 <span>رمز عبور</span><input class="form-control" type="password" ng-model="Ldata.pass">
+                 <button type="submit" ng-click="login()" class="btn btn-primary">ورود </button>
+            </form>
+    </div>
+
+    <div class="jumbotron">
+            <div><span class="label label-warning"> اکانت جدید</span> <i class="glyphicon glyphicon-user"></i></div>
+            <form>
+                <span>نام کاربری</span><input class="form-control" type="text" ng-model="Rdata.mail">
+                <span>رمز عبور</span><input class="form-control" type="password" ng-model="Rdata.pass">
+                <button type="submit" ng-click="register()" class="btn btn-primary">ثبت </button>
+            </form>
+    </div>
+ </div>
+
+    <div id="error"><p class="alert alert-danger alert-dismissible">{{errors}}</p></div>
+    <div id="congrats"><p class="alert alert-success success-dismissible">{{congrats}}</p></div>
+
+</div>
+</body>
+</html>

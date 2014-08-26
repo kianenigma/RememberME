@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="RememberMe">
+<head lang="fa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>مرا به خاطرت نگه دار</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.18/angular.js"></script>
+	<script src="core.js"></script>
+</head>
+
+
+<body ng-controller="mainCtrl">
+
+<div class="jumbotron">
+    <div><span> <span class="label label-info"> {{todos.length}} </span>  <a href="http://www.radiojavan.com/mp3s/mp3/Chaartaar-Maraa-Be-Khaaterat-Negah-Daar">مرا </a>به خاطرت نگه دار </span></div>
+    <form action="/"><button ng-click="logout()" class="btn btn-warning pull-left"> خروج <i class="glyphicon glyphicon-log-out"></i> </button></form>
+</div>
+
+<div style="display: none ;" class="alert alert-danger"> لطفا ابتدا<a href="http://localhost:8080/auth"> وارد سایت شوید</a>  </div>
+
+    <div class="list-group" ng-repeat="todo in todos">
+        <a class="list-group-item">
+            <span>{{todo.text}} </span>
+             <button class="btn btn-danger btn-xs" ng-click="deleteTodo(todo.text)" style="float: left">پاک کن <i class="glyphicon glyphicon-remove"></i> </button>
+            <span class="badge">{{$index + 1}}</span>
+        </a>
+    </div>
+
+<div class="inp">
+    <input class="form-control" type="text" ng-model="formData.text">
+    <button type="submit" ng-click="makeTodo()" class="btn btn-primary"> ! اضافه کن  </button>
+    <button type="submit" ng-click="deleteAllTodo()" class="btn btn-danger"> ! همه را پاک کن  </button>
+</div>
+
+
+</body>
+</html>

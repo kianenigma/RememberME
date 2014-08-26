@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'afsanehregular';
+    src: url('afsaneh-webfont.eot');
+    src: url('afsaneh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('afsaneh-webfont.woff') format('woff'),
+         url('afsaneh-webfont.ttf') format('truetype'),
+         url('afsaneh-webfont.svg#afsanehregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: afsanehregular;
+}
+
+.glyphicon {
+    position: relative;
+    top: .4em ;
+    left: .2em ;
+    font-size: 2.5em;
+}
+
+.label{
+    font-size: 1.3em ;
+}
+
+.jumbotron > div {
+    width:70% ;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > div {
+    margin: 1em  ;
+    padding: 1em ;
+    width: 100% ;
+}
+body > div > div {
+    margin: auto ;
+    width: 75% ;
+}
+
+form {
+    text-align: right;
+}
+
+form span {
+    font-size: 16px ;
+}
+
+.jumbotron {
+    display: inline-block;
+    width: 47% ;
+    margin: .5em ;
+    border: 1px solid rgba(0,0,0,.3);
+}
+
+
+#error , #congrats {
+    text-align: right;
+}
